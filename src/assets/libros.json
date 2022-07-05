@@ -1,0 +1,15 @@
+{
+    "libro": [{
+        "id": "15127-972",
+        "titulo": "Blue train",
+        "autor": "Hills-Cummings",
+        "editorial": "Editorial 1",
+        "descripcion": "Nobel"
+    }, {
+        "id": "49884-946",
+        "titulo": "The Monster",
+        "autor": "Graham, Monahan and Bins",
+        "editorial": "Editorial 2",
+        "descripcion": "Horror"
+    }]
+}

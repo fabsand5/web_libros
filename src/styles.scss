@@ -1,0 +1,184 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    // font-size: 18px;
+}
+
+body {
+    @apply bg-gray-50;
+}
+
+//cards
+.p-card-title {
+    @apply text-gray-400 font-light #{!important};
+}
+
+//content
+.data-block {
+    >div {
+        @apply flex justify-between mb-4;
+        &:last-child {
+            @apply mb-0;
+        }
+        .label {
+            @apply text-lg text-gray-600;
+        }
+        .caption {
+            @apply font-bold text-lg;
+        }
+    }
+}
+
+.divider {
+    @apply border-b block border-blue-200 mt-4 mb-6;
+}
+
+.location {
+    @apply flex justify-between border border-gray-200 gap-4 p-4 rounded-md mt-6 items-center;
+}
+
+.info-pill {
+    @apply rounded-lg p-4 border border-transparent bg-white items-center cursor-pointer text-gray-600 mb-4 w-full shadow-md;
+    >div {
+        @apply w-full block;
+    }
+    .label {
+        @apply text-indigo-300 block text-sm;
+    }
+    .caption {
+        @apply text-gray-500 block;
+    }
+    .cliente {
+        @apply w-full pt-2 block font-semibold;
+    }
+    &:hover {
+        @apply border-indigo-300 bg-indigo-50;
+        .label {
+            @apply text-indigo-500;
+        }
+    }
+}
+
+.assignment {
+    @apply flex flex-wrap justify-between gap-8;
+    >div {
+        @apply w-full flex justify-between;
+    }
+}
+
+.box {
+    @apply bg-blue-50 p-8 mb-6;
+    &.box-def {
+        @apply rounded-lg border border-blue-200;
+    }
+    &.box-hl {
+        @apply shadow-lg rounded-xl font-mono bg-indigo-100 h-full;
+    }
+}
+
+.p-datatable.p-datatable-plain .p-datatable-tbody>tr>td {
+    border: none !important;
+}
+
+.p-datatable.p-datatable-plain .p-datatable-tbody>tr>td {
+    border: none !important;
+}
+
+.globo {
+    @apply rounded-xl bg-white shadow px-8 py-4 h-full;
+    >* {
+        @apply block text-center w-full;
+    }
+}
+
+.scan {
+    @apply text-center mx-auto container;
+    svg {
+        @apply fill-current text-indigo-300 w-full;
+    }
+    h1 {
+        @apply text-2xl text-indigo-300 mt-10;
+    }
+}
+
+.code-scan {
+    @apply mb-16;
+    input {
+        @apply text-5xl #{!important};
+    }
+}
+
+.ticket-list {
+    .p-listbox-item {
+        @apply block #{!important};
+    }
+}
+
+.tab-data {
+    .caption {
+        @apply text-4xl;
+    }
+}
+
+.confirm-dialog-lg {
+    .p-dialog-content {
+        @apply text-3xl gap-4 items-start pt-4 #{!important};
+    }
+    .p-confirm-dialog-message {
+        @apply w-full;
+    }
+}
+
+.document-ok {
+    .p-inputgroup-addon {
+        @apply border-green-700 #{!important};
+    }
+    input {
+        @apply border-green-700 bg-green-50 #{!important};
+    }
+}
+
+.document-nok {
+    .p-inputgroup-addon {
+        @apply border-red-700 #{!important};
+    }
+    input {
+        @apply border-red-700 bg-red-50 #{!important};
+    }
+}
+
+.p-toast-message {
+    @apply text-2xl;
+}
+
+.p-severity-default {
+    @apply bg-gray-100 text-gray-700 #{!important};
+}
+
+.select-button-sm {
+    .p-button {
+        @apply px-1 py-2 border-0 border-none #{!important};
+    }
+}
+
+.code-scan input:focus {
+    @apply border border-blue-400 #{!important};
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.ng-touched.ng-invalid {
+    @apply border-red-500 #{!important};
+}
